@@ -11,6 +11,4 @@ RUN wget http://apache.mirrors.spacedump.net/tomcat/tomcat-8/v${TOMCAT_VERSION}/
 && ln -s /opt/apache-tomcat-${TOMCAT_VERSION} /opt/tomcat \
 && rm apache-tomcat-${TOMCAT_VERSION}.tar.gz
 
-ADD rootfs /
-
 WORKDIR /root
