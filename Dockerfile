@@ -1,7 +1,7 @@
 FROM frekele/ant
 RUN echo "\n install git "
 RUN apt-get update && apt-get install -y git
-RUN apt-get update && apt-get install -y vi
+RUN apt-get update && apt-get install -y vim
 ENV TOMCAT_VERSION=8.5.37
 ENV TOMCAT_HOME=/opt/tomcat
 
