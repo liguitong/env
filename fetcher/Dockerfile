@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM ubuntu:14.04
 MAINTAINER l00263786<liguitong@huawei.com>
 ENV REFRESHED_AT 2019-01-07
 RUN apt-get update && apt-get install  -yqq git
