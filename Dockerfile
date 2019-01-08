@@ -11,7 +11,8 @@ RUN wget http://apache.mirrors.spacedump.net/tomcat/tomcat-8/v${TOMCAT_VERSION}/
 && ln -s /opt/apache-tomcat-${TOMCAT_VERSION} /opt/tomcat \
 && rm apache-tomcat-${TOMCAT_VERSION}.tar.gz
 
-WORKDIR /root
+WORKDIR ${TOMCAT_HOME}/webapps
+VOLUME ["/opt/tomcat/webapps/"]
 
 EXPOSE 8080
 ENTRYPOINT ["/opt/tomcat/bin/catalina.sh", "run"]
